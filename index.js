@@ -42,7 +42,7 @@ class App extends React.Component {
 class Player extends React.Component {
   random() { return reach.hasRandom.random(); }
   async getRandomNumber() { 
-    const randomNumber = Math.floor(Math.random() * 10);
+    const randomNumber = Math.floor(Math.random() * 3);
     console.log("randomNumber"+randomNumber);
     return randomNumber;
   }
