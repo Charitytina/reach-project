@@ -7,7 +7,7 @@ import './index.css';
 import * as backend from './build/index.main.mjs';
 import { loadStdlib,ALGO_MyAlgoConnect as MyAlgoConnect } from '@reach-sh/stdlib';
 const reach = loadStdlib(process.env);
-const intToOutcome = ['B wins🥳🥳', 'Draw🤷‍♂️', 'A wins🥳🥳'];
+const intToOutcome = ['Grace wins🥳🥳', 'Draw🤷‍♂️', 'Charity wins🥳🥳'];
 const { standardUnit } = reach;
 const defaults = { defaultFundAmt: '10', defaultWager: '2', standardUnit };
 

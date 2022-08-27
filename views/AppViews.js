@@ -62,6 +62,13 @@ exports.DeployerOrAttacher = class extends React.Component {
     const {parent} = this.props;
     return (
       <div>
+	Please select range of price:
+        <br />
+        <button
+        className='setWager-btn'
+          onClick={() => parent.setWager(wager)}
+        >Set Range</button>
+        <br />
         Please select a role:
         <br />
         <p>
@@ -77,6 +84,13 @@ exports.DeployerOrAttacher = class extends React.Component {
             onClick={() => parent.selectAttacher()}
           >Attacher</button>
           <br /> Attach to the Deployer's contract.
+        </p>
+	<p>
+          <button
+          className='role-btn'
+            onClick={() => parent.selectDeployer2()}
+          >Attacher2</button>
+          <br /> Set the wager, deploy the contract.
         </p>
       </div>
     );
